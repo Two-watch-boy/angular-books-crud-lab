@@ -18,7 +18,7 @@ function config (  $routeProvider,   $locationProvider  )  {
       templateUrl: 'templates/books/show.html',
       controller: 'BooksShowController',
       controllerAs: 'booksShowCtrl'
-    }
+    })
     /* Include the additional route here! */
     .otherwise({
       redirectTo: '/'
@@ -30,4 +30,4 @@ function config (  $routeProvider,   $locationProvider  )  {
       enabled: true,
       requireBase: false
     });
-};
+}
